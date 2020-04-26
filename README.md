@@ -19,3 +19,11 @@ http://unsplash.com
 ```
 http://colorhunt.co
 ```
+
+# Instalaciones
+
+##### Instalar nodejs y npm
+```
+curl -sL https://deb.nodesource.com/setup_[version].x | sudo -E bash -
+sudo apt install nodejs
+```
