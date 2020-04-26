@@ -27,3 +27,9 @@ http://colorhunt.co
 curl -sL https://deb.nodesource.com/setup_[version].x | sudo -E bash -
 sudo apt install nodejs
 ```
+
+##### Instalar nvm
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+```
+
