@@ -33,3 +33,14 @@ sudo apt install nodejs
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 ```
 
+##### Instalar android studio
+```
+sudo apt-get install default-jre
+sudo apt-get install android-tools-adb adb android-tools-fastboot fastboot
+(sudo unzip ~/Downloads/android-studio-ide-173.4720617-linux.zip -d /opt
+||
+sudo tar -xvzf ~/Downloads/android-studio-ide-183.5452501-linux.tar.gz -C /opt)
+cd /opt/android-studio/bin
+./studio.sh
+```
+
