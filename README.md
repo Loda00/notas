@@ -20,6 +20,14 @@ http://unsplash.com
 http://colorhunt.co
 ```
 
+#### Api de localizacion 
+```
+http://ip-api.com/json
+```
+
+
+
+
 # Instalaciones
 
 ##### Instalar nodejs y npm
