@@ -54,6 +54,7 @@ cd /opt/android-studio/bin
 
 ##### Instalar Docker
 
+```
 sudo apt-get update
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -69,3 +70,4 @@ sudo groupadd docker
 sudo usermod -aG docker ${USER}
 su -s ${USER}
 docker run hello-world
+```
