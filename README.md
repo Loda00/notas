@@ -65,3 +65,7 @@ whoami # Saber el nombre de tu usuario
 sudo usermod -aG docker nombre_de_salida_en_whoami
 docker run hello-world
 
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+su -s ${USER}
+docker run hello-world
