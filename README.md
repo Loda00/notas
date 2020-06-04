@@ -52,3 +52,16 @@ cd /opt/android-studio/bin
 ./studio.sh
 ```
 
+##### Instalar Docker
+
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+sudo systemctl enable docker
+whoami # Saber el nombre de tu usuario
+sudo usermod -aG docker nombre_de_salida_en_whoami
+docker run hello-world
+
