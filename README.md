@@ -68,3 +68,12 @@ docker run hello-world
 
 sudo chmod 666 /var/run/docker.sock
 ```
+
+##### Instalar Postgresql
+```
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo apt install pgadmin3
+sudo -u postgres psql
+ALTER USER postgres PASSWORD 'password';
+```
