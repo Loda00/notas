@@ -26,6 +26,11 @@ http://ip-api.com/json
 ```
 
 
+##### watcher
+```
+sudo sysctl -w fs.inotify.max_user_watches=100000
+```
+
 
 
 # Instalaciones
@@ -77,3 +82,17 @@ sudo apt install pgadmin3
 sudo -u postgres psql
 ALTER USER postgres PASSWORD 'password';
 ```
+
+##### Config React Native 
+```
+- AVD config not permission
+  sudo chown <username> /dev/kvm
+  sudo chmod o+x /dev/kvm
+- SDK Manager/Android SDK/SDK Tools
+  Android SDK Build-Tools [30]
+  Android Emulator
+  Android SDK Platform-Tools
+  Google Play APK Expansion Library
+  Google Play Licensing Library
+```
+
