@@ -31,6 +31,12 @@ http://ip-api.com/json
 sudo sysctl -w fs.inotify.max_user_watches=100000
 ```
 
+##### Nodemailer Production
+```
+https://accounts.google.com/b/0/displayunlockcaptcha
+https://www.google.com/settings/security/lesssecureapps
+https://g.co/allowaccess
+```
 
 
 # Instalaciones
