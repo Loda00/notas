@@ -25,6 +25,12 @@ http://colorhunt.co
 http://ip-api.com/json
 ```
 
+#### Api de PREFIJOS DE TELÉFONOS POR PAÍSES, código, bandera, y abrev 
+```
+https://restcountries.eu/ 
+```
+
+
 
 ##### watcher
 ```
