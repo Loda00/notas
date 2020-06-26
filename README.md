@@ -95,6 +95,16 @@ sudo -u postgres psql
 ALTER USER postgres PASSWORD 'password';
 ```
 
+##### Instalar MySql
+```
+sudo apt update
+sudo apt install mysql-server
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+LUSH PRIVILEGES;
+sudo apt install mysql-workbench
+```
+
 ##### Config React Native 
 ```
 - AVD config not permission
