@@ -118,3 +118,15 @@ sudo apt install mysql-workbench
   Google Play Licensing Library
 ```
 
+##### Config Java
+```
+- update alternatives --config java
+- sudo update-alternatives --install /usr/bin/java java /opt/java/[jdk_version]/bin/java 110
+- variables de entorno 
+   .bashrc /etc/profile
+    - export JAVA_HOME=/opt/java/jdk1.8.0_212
+    - export PATH=$PATH:$JAVA_HOME/bin
+
+
+
+
