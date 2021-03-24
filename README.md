@@ -116,7 +116,57 @@ sudo apt install mysql-workbench
   Android SDK Platform-Tools
   Google Play APK Expansion Library
   Google Play Licensing Library
+  
+- Generar apk
+  Cambiar nombre
+  android/app/src/main/res/values/
+
+  Iconos
+  android/app/src/main/res/
+
+  https://makeappicon.com/​
+
+  http://romannurik.github.io/AndroidAs...​
+
+  Construir APK
+  1. keytool -genkey -v -keystore your_key_name.keystore -alias your_key_alias -keyalg RSA -keysize 2048 -validity 10000
+
+  2. copiar el archivo generado (your_key_name.keystore) a la carpeta /android/app 
+
+  3. Abrir el archivo /android/gradle.properties y agregar las siguientes lineas de codigo
+  MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
+  MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
+  MYAPP_UPLOAD_STORE_PASSWORD=*****
+  MYAPP_UPLOAD_KEY_PASSWORD=*****
+
+  4. Abrir el archivo android\app\build.gradle 
+  signingConfigs {
+      release {
+        storeFile file('your_key_name.keystore')
+        storePassword 'your_key_store_password'
+        keyAlias 'your_key_alias'
+        keyPassword 'your_key_file_alias_password'
+      }
+  }
+
+  buildTypes {
+      release {
+        ....
+        signingConfig signingConfigs.release
+      }
+  }
+
+  5. Entramos a la carpeta /android
+  cd android
+
+  6. Ejecutamos el comando para crear el apk
+  ./gradlew assembleDebug
+
+  7. Nuestra apk queda en el directorio
+  /android/app/build/outputs/apk/debug/
 ```
+
+
 
 ##### Config Java
 ```
