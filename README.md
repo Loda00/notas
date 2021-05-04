@@ -177,6 +177,7 @@ sudo apt install mysql-workbench
     - export JAVA_HOME=/opt/java/jdk1.8.0_212
     - export PATH=$PATH:$JAVA_HOME/bin
 
+systemctl status -l [example => docker] // estado de algo
 
 
 
