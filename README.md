@@ -179,5 +179,10 @@ sudo apt install mysql-workbench
 
 systemctl status -l [example => docker] // estado de algo
 
+##### Eslint
+
+npm i eslint
+npx eslint --init
+3 - standar
 
 
